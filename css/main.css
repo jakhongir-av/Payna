@@ -40,22 +40,26 @@ ul {
 }
 
 .header__nav_list_item a {
-  text-decoration: none;
+  font-family: "Poppins";
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  text-decoration: none;
   color: #070F18;
 }
 
 .btn__sign-in {
-  text-decoration: none;
-  padding: 12px 48px;
+  font-family: "Poppins";
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   border-radius: 50px;
+  padding: 12px 48px;
   background: #F5F6FB;
   color: #070F18;
+  border: 1px solid #F5F6FB;
 }
 
 .mobile__burger {
@@ -70,7 +74,7 @@ ul {
 }
 
 @media (max-width: 767px) {
-  .logo {
+  .header__logo {
     z-index: 99999;
   }
   .header__container {
@@ -107,9 +111,81 @@ ul {
     padding: 0 40px;
   }
   .header__container {
-    gap: 50px;
+    gap: 37px;
   }
   .header__nav_list {
     gap: 20px;
   }
+}
+.hero__container {
+  margin-top: 78px;
+}
+
+.hero__menu {
+  padding: 40px 30px;
+  margin-bottom: 70px;
+  background-image: url("../Images/Hero-img.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+.hero__menu h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  width: 447px;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 82px;
+  color: #000000;
+}
+
+.hero__menu p {
+  font-family: "Poppins";
+  font-style: normal;
+  width: 423px;
+  margin: 20px 0 30px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #575455;
+}
+
+.hero__menu a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 50px;
+  padding: 12px 48px;
+  background: #1F7CFF;
+  color: #fff;
+  border: 1px solid #1F7CFF;
+}
+
+.hero__adverts {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero__adverts span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #070F18;
+}
+
+.hero__adverts_companies {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.hero__adverts_companies img {
+  width: 100px;
 }/*# sourceMappingURL=main.css.map */

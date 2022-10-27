@@ -1,0 +1,67 @@
+//? Hero section
+
+// Hero menu
+.hero__container {
+    margin-top: 78px;
+}
+
+.hero__menu {
+    padding: 40px 30px;
+    margin-bottom: 70px;
+    background-image: url("../Images/Hero-img.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+}
+
+.hero__menu h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    width: 447px;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 82px;
+    color: #000000;
+}
+.hero__menu p {
+    font-family: 'Poppins';
+    font-style: normal;
+    width: 423px;
+    margin: 20px 0 30px 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #575455;
+}
+.hero__menu a {
+    @include btn(#1F7CFF, #fff, #1F7CFF, 600);
+}
+// End of Hero menu
+// Hero adverts
+.hero__adverts {
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__adverts span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #070F18;
+}
+
+.hero__adverts_companies {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    img {
+        width: 100px;
+    }
+}
+// End of Hero adverts
