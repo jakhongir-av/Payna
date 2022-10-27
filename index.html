@@ -8,25 +8,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/fontawesome-all.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Homework 8</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container header__container">
-            <img src="./Images/Payna-logo.png" alt="Payna">
-            <div class="header__wrapper">
-                <nav class="header__nav">
-                    <a href="#">Home</a>
-                    <a href="#">Features</a>
-                    <a href="#">Showcase</a>
-                    <a href="#">Pricing</a>
-                </nav>
-                <div class="header__link">
-                    <a href="#">Sign in</a>
-                </div>
-            </div>
+            <a class="header__logo" href="#"><img src="./Images/payna-logo.svg" alt="Payna" width="151"></a>
+            <input id="menu" type="checkbox">
+            <nav class="header__nav">
+                <ul class="header__nav_list">
+                    <li class="header__nav_list_item"><a href="#">Home</a></li>
+                    <li class="header__nav_list_item"><a href="#">Features</a></li>
+                    <li class="header__nav_list_item"><a href="#">Showcase</a></li>
+                    <li class="header__nav_list_item"><a href="#">Pricing</a></li>
+                </ul>
+            </nav>
+            <a class="btn__sign-in" href="#">Sign in</a>
+            <label for="menu" class="mobile__burger">
+                <i class="fa-solid fa-bars" fa-2x></i>
+            </label>
         </div>
     </header>
     <main>
@@ -35,6 +38,8 @@
     <footer>
 
     </footer>
+
+    <script src="./js/all.min.js"></script>
 </body>
 
 </html>
