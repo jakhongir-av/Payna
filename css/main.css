@@ -91,7 +91,7 @@ ul {
     background-color: #1F7CFF;
     height: 100vh;
     transform: translateX(-100%);
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
   }
   .header__nav_list a {
     color: #fff;
@@ -101,9 +101,13 @@ ul {
   }
   .mobile__burger {
     display: block;
+    transition: all 0.5s ease;
   }
   #menu:checked ~ .header__nav .header__nav_list {
     transform: translateX(0);
+  }
+  #menu:checked ~ .mobile__burger {
+    transform: rotate(180deg);
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
