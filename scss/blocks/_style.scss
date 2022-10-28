@@ -1,6 +1,7 @@
 //? Hero section
 
 // Hero menu
+
 .hero__container {
     margin-top: 78px;
 }
@@ -17,7 +18,7 @@
 .hero__menu h2 {
     font-family: 'Poppins';
     font-style: normal;
-    width: 447px;
+    max-width: 447px;
     font-weight: 700;
     font-size: 55px;
     line-height: 82px;
@@ -37,6 +38,7 @@
     @include btn(#1F7CFF, #fff, #1F7CFF, 600);
 }
 // End of Hero menu
+
 // Hero adverts
 .hero__adverts {
     padding: 0 30px;
@@ -64,5 +66,62 @@
         width: 100px;
     }
 }
+// End of Hero adverts
 
-//? End of Hero adverts
+// Media queries
+
+//todo: Tablet
+@media (min-width: 768px) and (max-width: 1160px) {
+    .hero__menu {
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2, p {
+            text-align: center;
+        }
+    }
+    .hero__adverts {
+        flex-direction: column;
+        gap: 30px;
+
+        span {
+            text-align: center;
+
+            br {
+                display: none;
+            }
+        }
+    }
+}
+//todo: Mobile
+
+@media (max-width: 767px) {
+    .hero__section {
+        margin: 50px 0;
+    }
+
+    .hero__menu {
+        background-image: none;
+    }
+
+    .hero__adverts {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+
+        span {
+            text-align: center;
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+}
+
+// End of Media queries
+
+//? End of Hero section

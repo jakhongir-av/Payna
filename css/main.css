@@ -137,7 +137,7 @@ ul {
 .hero__menu h2 {
   font-family: "Poppins";
   font-style: normal;
-  width: 447px;
+  max-width: 447px;
   font-weight: 700;
   font-size: 55px;
   line-height: 82px;
@@ -192,4 +192,45 @@ ul {
 }
 .hero__adverts_companies img {
   width: 100px;
+}
+
+@media (min-width: 768px) and (max-width: 1160px) {
+  .hero__menu {
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__menu h2, .hero__menu p {
+    text-align: center;
+  }
+  .hero__adverts {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .hero__adverts span {
+    text-align: center;
+  }
+  .hero__adverts span br {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .hero__section {
+    margin: 50px 0;
+  }
+  .hero__menu {
+    background-image: none;
+  }
+  .hero__adverts {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .hero__adverts span {
+    text-align: center;
+  }
+  .hero__adverts span br {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
