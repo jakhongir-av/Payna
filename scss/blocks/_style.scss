@@ -27,7 +27,7 @@
 .hero__menu p {
     font-family: 'Poppins';
     font-style: normal;
-    width: 423px;
+    max-width: 423px;
     margin: 20px 0 30px 0;
     font-weight: 400;
     font-size: 16px;
@@ -125,6 +125,107 @@
 // End of Media queries
 
 //? End of Hero section
+
 //? Info Section
 
+.info__headings {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.info__headings span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #F75C4E;
+} 
+
+.info__headings h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    color: #000000;
+}
+
+.info__headings p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    max-width: 400px;
+    margin-top: 14px;
+    text-align: center;
+    color: #575455;
+}
+
+.info__list {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px 93px;
+}
+
+.info__list_items {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.info-icon1 {
+    @include oval(#1F7CFF);
+    background-image: url("../Images/icon1.svg"); background-repeat: no-repeat;
+    background-position: center;
+}
+
+.info-icon2 {
+    @include oval(#F75C4E);
+    background-image: url("../Images/icon2.svg"); background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.info-icon3 {
+    @include oval(#191046);
+    background-image: url("../Images/icon3.svg"); background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.info-icon4 {
+    @include oval(#FF1FB3);
+    background-image: url("../Images/icon4.svg"); background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.info-icon5 {
+    @include oval(#5C4EF7);
+    background-image: url("../Images/icon5.svg"); background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.info-icon6 {
+    @include oval(#F7954E);
+    background-image: url("../Images/icon6.svg"); background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.info__list_items_menu  h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #070F18;
+}
+
+.info__list_items_menu p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    max-width: 249px;
+    color: #575455;
+}
 //? End of Info Section

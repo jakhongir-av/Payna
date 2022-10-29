@@ -10,3 +10,11 @@
     color: $color;
     border: 1px solid $br-color;
 }
+
+@mixin oval($oval-bg-color) {
+    display: block;
+    background-color: $oval-bg-color;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
