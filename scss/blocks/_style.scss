@@ -227,5 +227,185 @@
     line-height: 32px;
     max-width: 249px;
     color: #575455;
+    text-align: left;
 }
 //? End of Info Section
+
+//? CTA
+
+.cta {
+    margin: 100px 0;
+}
+
+.cta__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta__video {
+    position: relative;
+}
+
+.video {
+    border-radius: 40px;
+}
+
+.tablet {
+    display: none;
+}
+
+.mobile {
+    display: none;
+}
+
+.play__btn {
+    position: absolute;
+    // top: calc(50% - 35px);
+    // left: calc(50% - 35px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    //todo:    translate(x  ,  y)
+
+}
+
+.cta__form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+
+}
+
+.cta__form span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F75C4E;
+}
+
+.cta__form h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: #000000;
+}
+
+.cta__form p {
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 390px;
+    line-height: 32px;
+    margin: 30px 0;
+    color: #575455;
+}
+
+.cta__form form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.cta__form input {
+    width: 299px;
+    font-size: 16;
+    padding: 14px 24px;
+    border: none;
+    background-color: #f5f6fb;
+    border-radius: 50px;
+
+    &::placeholder {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #575455;
+    }
+    
+}
+
+.submit__btn {
+    @include btn(#1F7CFF, #fff, #1F7CFF, 600);
+    border: none;
+    position: absolute;
+    right: 0;
+}
+
+//* Media queries
+
+@media (max-width: 767px) {
+    .cta__container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .cta__form {
+        padding: 0 20px;
+    }
+
+    .video, .play__btn {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .cta__form {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cta__form h3, p {
+        text-align: center;
+    }
+
+    form {
+
+        button {
+            width: 299px;
+            top: 120%;
+            left: 0%;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .cta__container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .video, .play__btn {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    .cta__form h3, p, span {
+        text-align: center;
+    }
+
+    .cta__form {
+        padding: 0 20px;
+        justify-content: center;
+        align-items: center;
+    }
+}   
+
+@media (max-width: 1131px) {
+    form button {
+        top: 120%;
+        left: 0;
+        width: 299px;
+    }
+}
+
+
+//? End of CTA
