@@ -227,6 +227,9 @@ body {
   .hero__menu {
     background-image: none;
   }
+  .hero__menu p {
+    text-align: left;
+  }
   .hero__adverts {
     flex-direction: column;
     align-items: flex-start;
