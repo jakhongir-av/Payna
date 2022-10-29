@@ -294,6 +294,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  flex-shrink: 0;
   background-image: url("../Images/icon1.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -305,6 +306,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  flex-shrink: 0;
   background-image: url("../Images/icon2.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -316,6 +318,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  flex-shrink: 0;
   background-image: url("../Images/icon3.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -327,6 +330,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  flex-shrink: 0;
   background-image: url("../Images/icon4.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -338,6 +342,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  flex-shrink: 0;
   background-image: url("../Images/icon5.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -349,6 +354,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  flex-shrink: 0;
   background-image: url("../Images/icon6.svg");
   background-repeat: no-repeat;
   background-position: center;
