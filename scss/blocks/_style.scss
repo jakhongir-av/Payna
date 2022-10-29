@@ -104,6 +104,10 @@
 
     .hero__menu {
         background-image: none;
+
+        p {
+            text-align: left;
+        }
     }
 
     .hero__adverts {
@@ -119,6 +123,8 @@
             }
         }
     }
+
+
 
 }
 
